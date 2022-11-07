@@ -12,6 +12,7 @@ public class ErrorDemo2 {
 
         try {
             choice = input.nextInt();
+            if (choice == 0) throw new ArrayIndexOutOfBoundsException();
             System.out.printf("numbers[%d] = %d%n", choice, numbers[choice]);
         } catch (ArrayIndexOutOfBoundsException e) {
             System.out.println("Error: Index is invalid.");
