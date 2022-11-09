@@ -12,5 +12,19 @@ public class ArrayMethodDemo {
         int[] myArray2 = amd.returnArray();
         System.out.println(Arrays.toString(myArray2));
 
+        /*
+        Passing primitive type vs reference type as parameters of a method
+
+         */
+        int number = 2;
+        System.out.println("number before = " + number);
+        amd.passPrimitive(number);
+        System.out.println("number after = " + number);
+
+        System.out.print("\n");
+
+        System.out.println("MyArray[1] before = " + myArray[1]);
+        amd.passReference(myArray);
+        System.out.println("myArray[1] after = " + myArray[1]);
     }
 }
